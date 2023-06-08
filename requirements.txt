@@ -1,0 +1,16 @@
+os
+streamlit
+re
+regex
+plotly
+warnings
+pandas
+matplotlib
+numpy
+emoji
+seaborn
+circlify
+nltk
+wordcloud
+urlextract
+collections
