@@ -15,8 +15,7 @@ from nltk.corpus import stopwords
 from wordcloud import WordCloud
 import streamlit as st
 
-stopWords = set(stopwords.words('turkish'))
-nltk.download('stopwords')
+
 
 def preprocessor(data):
 
@@ -76,13 +75,10 @@ def words_counter(data):
     df_word_count = pd.DataFrame(Counter(words).most_common(),columns = ['Word','Count'])
    
 
-    wordsFiltered = []
-    for w in words:
-        if w not in stopWords:
-            wordsFiltered.append(w)
+    
 
-    df_filtered_word = pd.DataFrame(Counter(wordsFiltered).most_common(),columns = ['Word','Count'])
-    return words_count, df_word_count,df_filtered_word
+    
+    return words_count, df_word_count
 
 def emoji_counter(data):
     try:
