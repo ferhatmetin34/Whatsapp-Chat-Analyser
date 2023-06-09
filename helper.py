@@ -90,7 +90,7 @@ def emoji_counter(data):
         most_used_emojis = df_emoji[0] +  df_emoji[1] + df_emoji[2] + df_emoji[3]  + df_emoji[4]
         return df_emoji,most_used_emojis
     except:
-        pass
+        return 0,0
 
 def link_counter(data):
 
