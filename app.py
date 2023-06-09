@@ -35,7 +35,7 @@ if uploaded_file is not None:
     user_count = helper.user_counter(data)
     message_count = helper.message_counter(data)
     num_media_msgs = helper.media_message_counter(data)
-    words_count,df_word_count,df_filtered_word = helper.words_counter(data)
+    words_count,df_word_count = helper.words_counter(data)
     df_emoji,most_used_emoji = helper.emoji_counter(data)
     link_count = helper.link_counter(data)
     most_talkative = helper.most_talkative_finder(data)
