@@ -107,7 +107,7 @@ if uploaded_file is not None:
     selected_user = st.selectbox('**Select a User**',user_list+['All'])
     for user in user_list:
            if user ==selected_user:
-                words_count, df_word_count,df_filtered_word = helper.words_counter(data.loc[data.user == user])
+                words_count, df_word_count = helper.words_counter(data.loc[data.user == user])
 
     selected_viz_type = st.radio(label = '**Select a visualisation type**' ,
              options = ['Circle','WordCloud'])
